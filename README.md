@@ -79,7 +79,7 @@ This gives you all packages locally, linked via the monorepo workspace:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Jooonie29/all-for-one.git
+git clone https://github.com/jundevx-rgb/all-for-one.git
 cd all-for-one
 
 # Install dependencies (installs all 8 packages + their interdependencies)
