@@ -1,0 +1,38 @@
+{
+  "name": "@all-for-one/design-system",
+  "version": "0.1.0",
+  "description": "Design system tokens and theme engine for All for One",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/react": "^18.0.0"
+  },
+  "keywords": [
+    "design-system",
+    "tokens",
+    "theme",
+    "tailwind"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,1 @@
+export { ParallaxCarousel } from './ParallaxCarousel';

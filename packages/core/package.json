@@ -1,0 +1,57 @@
+{
+  "name": "@all-for-one/core",
+  "version": "0.1.0",
+  "description": "Production-grade UI components \u2014 Button, Card, Modal, Navbar, Hero, Pricing, Testimonials, FeatureGrid, Newsletter, Form",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean --treeshake",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "framer-motion": ">=10.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "framer-motion": ">=10.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "react",
+    "tailwindcss",
+    "typescript",
+    "button",
+    "card",
+    "modal",
+    "navbar",
+    "hero",
+    "pricing",
+    "testimonials",
+    "feature-grid",
+    "newsletter",
+    "form"
+  ],
+  "license": "MIT"
+}

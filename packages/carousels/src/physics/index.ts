@@ -1,0 +1,1 @@
+export { PhysicsCarousel } from './PhysicsCarousel';
